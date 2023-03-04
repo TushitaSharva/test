@@ -6,11 +6,6 @@ const pool = new Pool({
   database: 'cqadb',
   password: '1234',
   port: 5432,
-})
-
-pool.query('SELECT NOW()', (err, res) => {
-  console.log(err, res)
-  pool.end()
 });
 
 module.exports = pool;
